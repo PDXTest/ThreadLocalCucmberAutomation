@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
 		)
 
 
-public class Runner1 extends AbstractTestNGCucumberTests {
+public class Runner extends AbstractTestNGCucumberTests {
 	
 	@BeforeTest
 	@Parameters({"browser"})
