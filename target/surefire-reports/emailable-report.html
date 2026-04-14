@@ -9,17 +9,56 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Parallel Cross Browser Suite</th></tr>
-<tr><td><a href="#t0">EdgeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,259</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ChromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,483</td><td></td><td></td></tr>
-<tr><td><a href="#t2">FirefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,538</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">44,280</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">EdgeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,876</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ChromeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">24,165</td><td></td><td></td></tr>
+<tr><td><a href="#t2">FirefoxTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">44,529</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">6</th><th class="num">92,570</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Cross Browser Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EdgeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestRunner.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1774521763887</td><td rowspan="1">8468</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestRunner.Runner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1774521763887</td><td rowspan="1">9255</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">FirefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestRunner.Runner</td><td><a href="#m2">runScenario</a></td><td rowspan="1">1774521766241</td><td rowspan="1">8647</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Cross Browser Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EdgeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestRunner.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1776155781147</td><td rowspan="2">12818</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ChromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestRunner.Runner</td><td><a href="#m2">runScenario</a></td><td rowspan="2">1776155781147</td><td rowspan="2">11424</td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">FirefoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestRunner.Runner</td><td><a href="#m4">runScenario</a></td><td rowspan="2">1776155798137</td><td rowspan="2">25341</td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr></tbody>
 </table>
-<h2>EdgeTest</h2><h3 id="m0">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ChromeTest</h2><h3 id="m1">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>FirefoxTest</h2><h3 id="m2">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EdgeTest</h2><h3 id="m0">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#1 User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#2 This is second scenario&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTest</h2><h3 id="m2">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#1 User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#2 This is second scenario&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTest</h2><h3 id="m4">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#2 This is second scenario&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: BrowsingContext does no longer exist
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ec88123-6785-46eb-a642-826d6419fda3, findElement {using=css selector, value=h6[class=&apos;oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0, moz:accessibilityChecks: false, moz:buildID: 20260318190823, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25140, moz:profile: C:\Users\Mehul\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9ec88123-6785-46eb-a642-826d6419fda3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at DFpages.LoginDFPage.verfyDashboard(LoginDFPage.java:38)
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:44)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;#1 User Login to the application&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

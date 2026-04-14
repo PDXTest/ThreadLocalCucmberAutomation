@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Parallel Cross Browser Suite</span>
+              <span class="suite-name border-failed">Parallel Cross Browser Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" class="hide-methods passed suite-Parallel_Cross_Browser_Suite"> (hide)</a> <!-- hide-methods passed suite-Parallel_Cross_Browser_Suite -->
-                      <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" class="show-methods passed suite-Parallel_Cross_Browser_Suite"> (show)</a> <!-- show-methods passed suite-Parallel_Cross_Browser_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" class="hide-methods failed suite-Parallel_Cross_Browser_Suite"> (hide)</a> <!-- hide-methods failed suite-Parallel_Cross_Browser_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" class="show-methods failed suite-Parallel_Cross_Browser_Suite"> (show)</a> <!-- show-methods failed suite-Parallel_Cross_Browser_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Parallel_Cross_Browser_Suite">
+                    <div class="method-list-content failed suite-Parallel_Cross_Browser_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">runScenario("User Login to the application", "Login")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">runScenario("#1 User Login to the application", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">runScenario("User Login to the application", "Login")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">runScenario("#2 This is second scenario", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">runScenario("User Login to the application", "Login")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">runScenario("#1 User Login to the application", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Parallel_Cross_Browser_Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">runScenario("#2 This is second scenario", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">runScenario("#2 This is second scenario", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Cross_Browser_Suite" title="TestRunner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">runScenario("#1 User Login to the application", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_Cross_Browser_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,44 +143,122 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Parallel_Cross_Browser_Suite" class="panel Parallel_Cross_Browser_Suite">
-          <div class="suite-Parallel_Cross_Browser_Suite-class-passed">
+          <div class="suite-Parallel_Cross_Browser_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestRunner.Runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("User Login to the application", "Login") -->
+                  <a name="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#1 User Login to the application", "Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Login to the application","Login")</span>
+                  <span class="parameters">("#1 User Login to the application","Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("User Login to the application", "Login") -->
+                  <a name="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#2 This is second scenario", "Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Login to the application","Login")</span>
+                  <span class="parameters">("#2 This is second scenario","Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Login to the application&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("User Login to the application", "Login") -->
+                  <a name="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#1 User Login to the application", "Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Login to the application","Login")</span>
+                  <span class="parameters">("#1 User Login to the application","Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#2 This is second scenario", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("#2 This is second scenario","Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;#2 This is second scenario&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#2 This is second scenario", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("#2 This is second scenario","Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: BrowsingContext does no longer exist
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ec88123-6785-46eb-a642-826d6419fda3, findElement {using=css selector, value=h6[class=&apos;oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0, moz:accessibilityChecks: false, moz:buildID: 20260318190823, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25140, moz:profile: C:\Users\Mehul\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9ec88123-6785-46eb-a642-826d6419fda3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at DFpages.LoginDFPage.verfyDashboard(LoginDFPage.java:38)
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:44)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:14)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;#1 User Login to the application&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("#1 User Login to the application", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("#1 User Login to the application","Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dashboard] but found [仪表盘]
+	at stepDefinitions.LoginStep.user_navigate_to_the_dashboard(LoginStep.java:48)
+	at ✽.User navigate to the dashboard(file:///C:/Users/Mehul/Automation_WorkPlace_Dec_2025/ThreadLocalCucmberAutomation/src/test/resources/features/Login.feature:8)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Parallel_Cross_Browser_Suite-class-passed -->
+          </div> <!-- suite-Parallel_Cross_Browser_Suite-class-failed -->
         </div> <!-- panel Parallel_Cross_Browser_Suite -->
         <div panel-name="test-xml-Parallel_Cross_Browser_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -245,24 +338,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner.Runner')
-data.setCell(0, 3, 9255);
+data.setCell(0, 3, 25341);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'TestRunner.Runner')
-data.setCell(1, 3, 8647);
+data.setCell(1, 3, 16989);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'TestRunner.Runner')
-data.setCell(2, 3, 8468);
+data.setCell(2, 3, 12818);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'TestRunner.Runner')
+data.setCell(3, 3, 11424);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'TestRunner.Runner')
+data.setCell(4, 3, 10635);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'TestRunner.Runner')
+data.setCell(5, 3, 8329);
 window.suiteTableData['Parallel_Cross_Browser_Suite']= { tableData: data, tableDiv: 'times-div-Parallel_Cross_Browser_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Parallel_Cross_Browser_Suite">
               </div> <!-- times-div-Parallel_Cross_Browser_Suite -->
             </div> <!-- times-div -->
@@ -289,53 +394,77 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestRunner.Runner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1ebd319f)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@3c0be339)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@15ca7889)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
+              <div class="configuration-test before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">584 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">584 ms</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@5c671d7f)</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">584 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@757277dc)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@687e99d8)</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Login to the application", "Login")</span>
-                <span class="method-start">3911 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#1 User Login to the application", "Login")</span>
+                <span class="method-start">596 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Login to the application", "Login")</span>
-                <span class="method-start">3911 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#1 User Login to the application", "Login")</span>
+                <span class="method-start">596 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Login to the application", "Login")</span>
-                <span class="method-start">6265 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#1 User Login to the application", "Login")</span>
+                <span class="method-start">596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#2 This is second scenario", "Login")</span>
+                <span class="method-start">12029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#2 This is second scenario", "Login")</span>
+                <span class="method-start">13418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("#2 This is second scenario", "Login")</span>
+                <span class="method-start">17586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">12383 ms</span>
+                <span class="method-start">21752 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">13166 ms</span>
+                <span class="method-start">22667 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">14912 ms</span>
+                <span class="method-start">42929 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
