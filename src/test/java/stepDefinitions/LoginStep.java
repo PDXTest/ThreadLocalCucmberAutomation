@@ -19,15 +19,18 @@ public class LoginStep {
 	//ExtentTest test = ThreadLocalDriverFactory.startTest();
 	private LoginDFPage loginpage = new LoginDFPage();
 
+	public ExtentTest test() {
+	    return ThreadLocalDriverFactory.getTest();
+	}
 
 	@Given("User is on login page")
 	public void user_is_on_login_page() {
 
 		loginpage.launchURL();
-		ThreadLocalDriverFactory.getTest().info("Launching application");
-		ThreadLocalDriverFactory.getTest().info("Entering username");
-		ThreadLocalDriverFactory.getTest().log(Status.PASS, "Test Passed");
-		ThreadLocalDriverFactory.getTest().log(Status.PASS, "Test Case PASSED"); 
+		test().info("Launching application on Browser : " + ThreadLocalDriverFactory.getBrowser());
+		test().info("Entering username");
+		test().log(Status.PASS, "Test Passed");
+		test().log(Status.PASS, "Test Case PASSED"); 
 
 	}
 

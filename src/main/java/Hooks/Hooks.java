@@ -23,7 +23,9 @@ public class Hooks {
 	    String browser = ThreadLocalDriverFactory.getBrowser();
 	    ThreadLocalDriverFactory.setDriver(browser); // ✅ dynamic browser
 	    
-	    ExtentTest extentTest = ThreadLocalDriverFactory.getExtent().createTest(scenario.getName());
+	    ExtentReports extentReports = ThreadLocalDriverFactory.getExtent();
+	    ExtentTest extentTest = extentReports.createTest(scenario.getName());
+	    
 	    ThreadLocalDriverFactory.setTest(extentTest);
 	}
 

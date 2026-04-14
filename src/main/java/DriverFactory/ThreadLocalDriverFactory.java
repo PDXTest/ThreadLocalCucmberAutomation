@@ -93,7 +93,7 @@ public class ThreadLocalDriverFactory {
 	public synchronized static ExtentReports getExtent() {
 	
 		if (extent == null) {
-			spark = new ExtentSparkReporter("target/Spark.html");
+			spark = new ExtentSparkReporter("test-output/extent-report/Spark.html");
 			extent = new ExtentReports();
 			extent.attachReporter(spark);
 			
